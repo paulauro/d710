@@ -1,0 +1,77 @@
+ /*---Start top navbar---*/
+
+.navbar  {
+	height: 50px;
+	background-color: #444fad;
+}
+
+
+
+.navbar-inverse .navbar-nav > li > a {
+    font-size: 18px;
+	list-style-type: none;
+padding: 10px 20px 10px 10px;
+    color: #ffffff;
+}
+
+
+  /*---End top navbar---*/
+  
+
+  /*---Start responsive images---*/
+ 
+
+video{
+max-width:100%;height:auto;
+}
+
+img{
+max-width:100%;height:auto;
+}
+
+
+.media
+{
+max-width:100%;height:auto;
+}
+
+  /*---End responsive images---*/
+
+
+ /* bootstrap hover fix */
+ul.nav li.dropdown:hover ul.dropdown-menu{
+display: block;
+}
+ 
+
+
+  
+  .container{
+   padding-right: 25px;
+   padding-left: 25px;
+   max-width: 1400px;
+   min-width: 320px;
+   width: auto;
+}
+
+.region-sidebar-first{
+	margin-top: 15px;
+	font-size: 12px;
+	background-color: #ffffff;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;	
+	border: none;
+}
+
+ /* header font size */
+h1 { font-size: 1.8em; line-height: 26px; }
+h2 { font-size: 1.4em; line-height: 25px; }
+h3 { font-size: 1.17em; line-height: 20px; }
+h4 { font-size: 1.12em; line-height: 20px; }
+h5 { font-size: .83em; line-height: 15px; }
+h6 { font-size: .75em; line-height: 15px; }

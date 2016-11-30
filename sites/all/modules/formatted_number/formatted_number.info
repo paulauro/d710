@@ -1,0 +1,12 @@
+name = Formatted Number Field
+description = Defines numeric field types where thousands separator and decimal point are inherited from the Format Number API module.
+package = Fields
+core = 7.x
+dependencies[] = format_number
+
+; Information added by drupal.org packaging script on 2013-09-30
+version = "7.x-1.x-dev"
+core = "7.x"
+project = "formatted_number"
+datestamp = "1380579963"
+

@@ -1,0 +1,21 @@
+name = mytheme
+description = A simple one-column, tableless, fluid width administration theme.
+package = Core
+version = VERSION
+core = 7.x
+stylesheets[screen][] = reset.css
+stylesheets[screen][] = style.css
+
+settings[shortcut_module_link] = 1
+regions[header] = header
+regions[content] = Content
+regions[help] = Help
+regions[footer] = footer
+regions[sidebar] = sidebar
+regions_hidden[] = sidebar_first
+
+; Information added by Drupal.org packaging script on 2016-02-24
+version = "7.43"
+project = "drupal"
+datestamp = "1456343506"
+

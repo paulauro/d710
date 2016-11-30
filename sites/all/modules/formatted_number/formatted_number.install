@@ -1,0 +1,118 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the formatted_number module.
+ */
+
+/**
+ * Implements hook_field_schema().
+ */
+function formatted_number_field_schema($field) {
+  switch ($field['type']) {
+    case 'formatted_tinyint' :
+      $columns = array(
+        'value' => array(
+          'type' => 'int',
+          'size' => 'tiny',
+          'not null' => FALSE
+        ),
+      );
+      break;
+
+    case 'formatted_tinyint_unsigned' :
+      $columns = array(
+        'value' => array(
+          'type' => 'int',
+          'size' => 'tiny',
+          'unsigned' => TRUE,
+          'not null' => FALSE
+        ),
+      );
+      break;
+
+    case 'formatted_smallint' :
+      $columns = array(
+        'value' => array(
+          'type' => 'int',
+          'size' => 'small',
+          'not null' => FALSE
+        ),
+      );
+      break;
+
+    case 'formatted_smallint_unsigned' :
+      $columns = array(
+        'value' => array(
+          'type' => 'int',
+          'size' => 'small',
+          'unsigned' => TRUE,
+          'not null' => FALSE
+        ),
+      );
+      break;
+
+    case 'formatted_mediumint' :
+      $columns = array(
+        'value' => array(
+          'type' => 'int',
+          'size' => 'medium',
+          'not null' => FALSE
+        ),
+      );
+      break;
+
+    case 'formatted_mediumint_unsigned' :
+      $columns = array(
+        'value' => array(
+          'type' => 'int',
+          'size' => 'medium',
+          'unsigned' => TRUE,
+          'not null' => FALSE
+        ),
+      );
+      break;
+
+    case 'formatted_integer' :
+      $columns = array(
+        'value' => array(
+          'type' => 'int',
+          'not null' => FALSE
+        ),
+      );
+      break;
+
+    case 'formatted_integer_unsigned' :
+      $columns = array(
+        'value' => array(
+          'type' => 'int',
+          'unsigned' => TRUE,
+          'not null' => FALSE
+        ),
+      );
+      break;
+
+    case 'formatted_float' :
+      $columns = array(
+        'value' => array(
+          'type' => 'float',
+          'not null' => FALSE
+        ),
+      );
+      break;
+
+    case 'formatted_decimal' :
+      $columns = array(
+        'value' => array(
+          'type' => 'numeric',
+          'precision' => $field['settings']['precision'],
+          'scale' => $field['settings']['scale'],
+          'not null' => FALSE
+        ),
+      );
+      break;
+  }
+  return array(
+    'columns' => $columns,
+  );
+}
